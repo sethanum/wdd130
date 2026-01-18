@@ -1,7 +1,16 @@
+main {
+    max-width: 840;
+}
+
 nav a {
     color: white;
     padding: 10px;
     display: block;
+}
+
+nav {
+    background-color: white;
+    padding: 20px;
 }
 
 hi {
