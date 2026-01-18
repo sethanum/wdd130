@@ -1,5 +1,18 @@
+main img {
+    width: 150px;
+    height: auto;
+    border: 2px;
+    padding: 20px;
+    box-shadow: 0 0 30px grey;
+}
+
 main {
     max-width: 840;
+    max-width: 840px;
+}
+
+h1 {
+    color: black;
 }
 
 nav a {
@@ -9,19 +22,8 @@ nav a {
 }
 
 nav {
-    background-color: white;
+    background-color: blue;
     padding: 20px;
-}
-
-hi {
-    color: steelblue;
-}
-
-main img {
-    width: 150px;
-    height: auto;
-    border: 2px;
-    box-shadow: 0 0 30px gray;
 }
 
 p {
@@ -31,11 +33,11 @@ p {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 2px solid rgb(0 0 0 / 0.2);
     /* 1 */
     padding: 1rem;
     background-color: #eee;
-    color: #333;
+    color: #000;
     text-align: center;
 
 }
