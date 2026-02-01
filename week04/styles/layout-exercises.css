@@ -23,37 +23,52 @@ div {
 
 .flex {
     background-color: #aba;
-    /* write declarations here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 
 }
 
 .grid {
     background-color: #abb;
-    /* enter declarations here */
+    display: grid;
+    place-items: center;
+    height: 200px;
 
 }
 
 .container2 {
-    /* write declarations here */
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .two {
     background-color: #ace;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container3 {
-    /* write declarations here */
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
 }
 
 .columns-3 {
-    /* write declaration here */
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
 }
 
 .three {
     margin: .25rem;
     background-color: #abd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
