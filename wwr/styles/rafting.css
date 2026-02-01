@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #fff;
+    --primary-color: black;
     /* forest green */
     --secondary-color: #f4a261;
     /* warm sand */
@@ -30,12 +30,50 @@ footer {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 150px auto;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    padding: 16px;
-    display: flex;
+    padding: 1rem;
     justify-content: space-between;
     align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.history-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+    flex: 1;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 h1,
@@ -92,4 +130,23 @@ article {
     width: 125px;
     margin-left: 12px;
     border-radius: 6px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #004466;
+    color: white;
+}
+
+footer .social {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .social img {
+    width: 50px;
+    height: 50px;
 }
