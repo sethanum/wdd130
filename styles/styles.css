@@ -1,9 +1,9 @@
 main img {
     width: 150px;
     height: auto;
-    border: 2px;
-    padding: 20px;
-    box-shadow: 0 0 30px grey;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px darkblue;
 }
 
 header,
@@ -15,14 +15,14 @@ footer,
 
 h1 {
     background-color: white;
-    color: black;
+    color: darkblue;
     padding: 2px;
     text-align: center;
 }
 
 nav a {
     display: block;
-    padding: 0.5rem;
+    padding: 20px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
@@ -30,8 +30,8 @@ nav a {
 }
 
 nav {
-    background-color: steelblue;
-    padding: 1rem;
+    background-color: darkblue;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -75,4 +75,8 @@ aside {
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
+}
+
+p {
+    padding: 10px;
 }
