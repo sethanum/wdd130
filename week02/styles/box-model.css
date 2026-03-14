@@ -1,15 +1,29 @@
 .callout {
-	
+    background-color: yellow;
+    background: full;
+    width: 200%
 }
 
 .callout img {
-	
+    color: brown;
+    margin: 4px 4px;
+    float: left;
+    width: 150px;
+    border: 2px solid black;
+    padding: 5px;
 }
 
 blockquote {
-	
+    color: brown;
 }
 
 cite {
-	
+    color: brown;
+    padding: 2.5rem;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid brown;
+    margin: 10px 0;
 }
