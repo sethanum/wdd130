@@ -21,7 +21,7 @@ header p {
 
 /* Main content */
 main {
-    max-width: 700px;
+    max-width: 400px;
     margin: 2rem auto;
     background-color: white;
     padding: 1.5rem;
@@ -55,10 +55,12 @@ section h3,
 section h4 {
     margin-top: 0;
     font-size: 1.2rem;
+    border-bottom: #333;
 }
 
 section p {
     margin: 0.5rem 0;
+    padding: 0;
 }
 
 section ul {
