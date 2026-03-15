@@ -11,6 +11,7 @@ header {
     color: white;
     text-align: center;
     padding: 1rem;
+
 }
 
 header p {
@@ -31,6 +32,10 @@ main {
     margin: 0 auto;
 }
 
+p {
+    padding: 0;
+}
+
 main h1 {
     text-align: center;
     font-size: 1.8rem;
@@ -43,6 +48,7 @@ picture img {
     height: auto;
     border-radius: 6px;
     margin-bottom: 1.5rem;
+    box-shadow: grey;
 }
 
 /* Info sections */
