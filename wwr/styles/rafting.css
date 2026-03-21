@@ -2,7 +2,7 @@
     --primary-color: #055a05;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --accent2-color: #625636;
     --heading-font: "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -105,7 +105,7 @@ nav a:hover {
 footer {
     text-align: center;
     font-size: 0.9em;
-    color: var(--accent1-color);
+    color: var(--accent2-color);
 }
 
 footer .socialmedia a {
