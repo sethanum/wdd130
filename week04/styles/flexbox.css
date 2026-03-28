@@ -1,13 +1,13 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
-    margin: 1rem;
+    margin: 2px;
 }
 
 .flex-container {
     border: 3px dashed darkcyan;
     background-color: lightyellow;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flex-item {
@@ -21,6 +21,7 @@ body {
 
 .item1 {
     min-height: 100px;
+
 }
 
 .item2 {

@@ -11,6 +11,8 @@ body {
 }
 
 div {
+    display: grid;
+    justify-content: center;
     margin: 1rem;
     border: 1px dashed;
     padding: 1rem;
