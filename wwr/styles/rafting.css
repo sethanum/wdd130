@@ -121,7 +121,7 @@ footer {
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    color: black;
+    color: var(--accent-color);
     font-size: 2.5rem;
 }
 
@@ -130,7 +130,8 @@ footer {
     top: 50%;
     right: 10%;
     max-width: 80%;
-    color: black;
+    color: var(--text-color);
+    background-color: var(--accent-color);
 
 }
 
