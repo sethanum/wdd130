@@ -1,161 +1,208 @@
-:root {
-    --primary-color: #004466;
-    --accent-color: #ffcc00;
-    --text-color: #333;
-}
-
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
 header {
-    display: grid;
-    grid-template-columns: 150px auto;
-    align-items: center;
-    padding: 1rem;
-    background-color: #004466;
+    background: #004466;
     color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header .logo img {
-    max-width: 100%;
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
     list-style: none;
+    display: flex;
+    gap: 1rem;
+
 }
 
-nav a {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: white;
     font-weight: bold;
 }
 
-.history-grid {
-    display: grid;
-    grid-template-columns: 1fr 300px 1fr;
-    gap: 1rem;
-    align-items: center;
-    margin: 2rem 0;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.adventure-gallery {
+.map {
+    background: white;
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 680px;
+    font-weight: bold;
+    border: 1px solid #ddd;
 }
 
-.adventure-gallery figure {
-    text-align: center;
-    flex: 1;
+form {
+    background: white;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.adventure-gallery img {
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
     width: 100%;
-    max-width: 200px;
-    border-radius: 8px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #004466;
+form textarea {
+    height: 100px;
+}
+
+form .radio-group,
+form .checkbox-group {
+    margin-top: 1rem;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #004466;
     color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-footer .social {
-    display: flex;
-    gap: 1rem;
+form button:hover {
+    background: #006699;
 }
 
-footer .social img {
-    width: 30px;
-    height: 30px;
-}
-
-/* General section headings */
-h1,
-h2 {
+/* Employee Profiles */
+.employee-section {
     text-align: center;
-    margin: 1.5rem 0;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    color: #004466;
+    padding: 2rem;
 }
 
-/* Optional: add some spacing for visual balance */
-section {
-    margin: 2rem auto;
-    max-width: 1200px;
+.employee-section h2 {
+    margin-bottom: 1rem;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-h1,
-h2 {
-    color: var(--primary-color);
-}
-
-footer {
-    background-color: var(--primary-color);
-}
-
-.hero {
-    position: relative;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--accent-color);
-    font-size: 2.5rem;
-}
-
-.hero article {
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    max-width: 80%;
-    color: var(--text-color);
-    background-color: var(--accent-color);
-
-}
-
-.hero article img {
-    float: right;
-    margin-left: 1rem;
-    max-width: 200px;
-}
-
-footer {
+.profiles {
     display: flex;
+    /* Horizontal layout */
+    justify-content: center;
+    gap: 30px;
+}
+
+.profile {
+    text-align: center;
+    /* Centers text under image */
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Space between image and text */
+.contact-container {
+    display: flex;
+    /* Enables side-by-side layout */
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--primary-color);
+    /* Adds spacing between form and map */
+    align-items: flex-start;
+    /* Aligns items at the top */
+    gap: 20px;
+    /* Space between the two sections */
+}
+
+.contact-form {
+    flex: 1;
+    /* Form takes equal space */
+    max-width: 500px;
+    /* Optional: limit form width */
+}
+
+.contact-map {
+    flex: 1;
+    /* Map takes equal space */
+    max-width: 500px;
+    /* Optional: limit map width */
+}
+
+/* Footer */
+footer {
+    background: #004466;
     color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
-footer nav.socialmedia {
+.form-map {
     display: flex;
-    gap: 1rem;
+    /* Map and form side by side */
+    justify-content: space-between;
+    gap: 30px;
 }
 
-footer nav.socialmedia img {
-    width: 30px;
-    height: 30px;
+.map {
+    flex: 1;
+    /* Map takes one column */
+}
+
+form {
+    flex: 1;
+    /* Form takes the other column */
+    display: flex;
+    flex-direction: column;
+    /* Stack inputs vertically */
+    gap: 15px;
+}
+
+.team {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profiles {
+    display: flex;
+    /* Horizontal layout */
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.profile img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+
 }

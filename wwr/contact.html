@@ -1,114 +1,113 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-      content="Contact Rafting Adventures for reservations, inquiries, fun and touring or suggestions.">
-    <meta name="Seth Tettey Kofi Anum" content="Seth T.k Anum">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Rafting Adventures</title>
+    <meta name="description"
+      content="Discover Rafting Adventures - Forms and map of water rafting adventures made freely accessible to experience adventure.">
+    <meta name="author" content="Seth Tettey Kofi Anum">
+    <title>Rafting Adventures | Contact Us</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="logo-nav">
-            <img src="images/raft.jpg" width="100" alt="Rafting Adventures Logo" class="logo">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
+
+    <header>
+        <div class="logo">
+            <img src="images/raft.jpg" width="150" alt="Rafting Adventures Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
-        <!-- Required H1 -->
-        <h1>Rafting Adventures – Contact Us</h1>
+        <main>
+            <!-- Left column: company info + map -->
+            <section class="company-info">
+                <h2>White Water Rafting Company</h2>
+                <p>Tema River Street<br>Tema, Greater Accra</p>
+                <p>+55-761-4507</p>
+                <p>anumseth775@gmail.com</p>
+            </section>
+            <section class="contact">
+                <div class="form-map">
+                    <!-- Map -->
+                    <div class="map">
+                        <iframe src="your-map-link-here"></iframe>
+                    </div>
 
-        <!-- Contact Info + Form Side by Side -->
-        <section class="contact-section">
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p><strong>Rafting Adventures</strong></p>
-                <p>123 Tema River Road, Accra City</p>
-                <p>Phone: (233) 55-761-4507</p>
-                <p>Email: <a href="mailto:info@raftingadventures.com">info@raftingadventures.com</a>
-                </p>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen
-                      loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <!-- Entire Contact Form -->
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Your name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="user_email" placeholder="Your email">
+
+                        <label for="purpose">Message Purpose:</label>
+                        <select id="purpose" name="purpose">
+                            <option>General Inquiry</option>
+                            <option>Reservation Question</option>
+                            <option>Website Suggestion</option>
+                        </select>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="user_message"
+                          placeholder="Write your message here..."></textarea>
+
+                        <label>
+                            <input type="checkbox" name="newsletter"> Please subscribe me to the
+                            monthly
+                            newsletter
+                        </label>
+
+                        <button type="submit">Send Message</button>
+                    </form>
                 </div>
-            </div>
+            </section>
 
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br>
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br>
 
-                    <fieldset>
-                        <legend>Purpose of Message:</legend>
-                        <label for="general">
-                            <input type="radio" id="general" name="purpose" value="General Inquiry">
-                            General Inquiry
-                        </label>
-                        <label for="reservation">
-                            <input type="radio" id="reservation" name="purpose"
-                              value="Reservation Question"> Reservation Question
-                        </label>
-                        <label for="suggestion">
-                            <input type="radio" id="suggestion" name="purpose"
-                              value="Website Suggestion"> Website Suggestion
-                        </label>
-                    </fieldset>
+            <!-- Employees section full width -->
+            <section class="team">
+                <section class="team">
+                    <h2>We Are Here To Serve You</h2>
+                    <div class="profiles">
+                        <div class="profile">
+                            <img src="images/adventure1.jpg" alt="Employee 1">
+                            <p>Employee 1<br>Mychelle Anum Lead Guide</p>
+                        </div>
+                        <div class="profile">
+                            <img src="images/adventure2.jpg" alt="Employee 2">
+                            <p>Employee 2<br>Osei Smith Safety Officer</p>
+                        </div>
+                        <div class="profile">
+                            <img src="images/adventure3.jpg" alt="Employee 3">
+                            <p>Employee 3<br>Seth tk Anum Trip Coordinator</p>
+                        </div>
+                    </div>
+                </section>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="2"></textarea>
+            </section>
 
-                    <label for="newsletter">
-                        <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe
-                        me to the monthly newsletter
-                    </label>
 
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
+        </main>
 
-        <!-- Team Profiles -->
-        <section class="team">
-            <h2>We Are Here to Serve You</h2>
-            <div class="profiles">
-                <figure>
-                    <img src="images/happy.jpg" width="200" alt="Seth - Lead Guide">
-                    <figcaption>Seth – Lead Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure 2.jpg" width="200"
-                      alt="Myckell – Safety Coordinator">
-                    <figcaption>Myckell – Safety Coordinator</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/adventure 3.jpg" width="200" alt="Osei – Reservations Manager">
-                    <figcaption>Osei – Reservations Manager</figcaption>
-                </figure>
-            </div>
-        </section>
     </main>
-
     <footer>
-        <p>&copy; 2026 Rafting Adventures | Designed by Seth</p>
+        <p>&copy; 2026 Rafting Adventures | Seth Tettey Kofi Anum</p>
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.jpg" alt="Facebook Page"></a>
-            <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn Page"></a>
-            <a href="#"><img src="images/instagram.jpg" alt="Instagram Page"></a>
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.jpg" alt="Twitter"></a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram"></a>
         </nav>
     </footer>
 </body>
