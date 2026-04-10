@@ -6,49 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafting Adventures | Trips</title>
     <meta name="description"
-      content="Explore our rafting trips: beginner, intermediate, and extreme adventures. Find trip details, pricing, and book your journey today.">
+      content="Explore thrilling rafting trips with Rafting Adventures. Choose from beginner to advanced expeditions and book your adventure today.">
     <link rel="stylesheet" href="rafting.css">
 </head>
 
 <body>
     <header>
+        <img src="images/raft.jpg" alt="raft logo">
         <h1>Rafting Adventures</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html" class="active">Trips</a>
+                <a href="contact.html">Contact Us</a>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready for Adventure?</h2>
+            <p>Contact us today to book your rafting trip and experience the thrill of the river!
+            </p><br>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </section>
+
         <!-- Trip Descriptions -->
-        <section class="trips">
-            <article>
-                <img src="images/adventure 3.jpg" width="100" length="250"
-                  alt="Beginner rafting trip">
-                <h2>Beginner Rapids</h2>
-                <p>Perfect for families and first-timers. Gentle rapids with expert guides.</p>
-            </article>
-            <article>
-                <img src="images/adventure 2.jpg" width="100" length="250"
-                  alt="Intermediate rafting trip">
-                <h2>Intermediate Adventure</h2>
-                <p>A mix of calm waters and thrilling rapids for those seeking excitement.</p>
-            </article>
-            <article>
-                <img src="images/adventure4.jpg" width="100" length="250"
-                  alt="Advanced rafting trip">
-                <h2>Extreme Challenge</h2>
-                <p>High-adrenaline rapids for experienced rafters ready for the ultimate test.</p>
-            </article>
+        <section class="trip-descriptions">
+            <h2>Our Featured Trips</h2>
+            <div class="trip-grid">
+                <article>
+                    <img src="images/adventure.jpg" alt="Beginner rafting trip">
+                    <h3>Gentle Rapids – Beginner</h3>
+                    <p>Perfect for families and first-timers. A scenic 2-hour float with mild rapids
+                        and plenty of wildlife viewing.</p>
+                </article>
+                <article>
+                    <img src="images/adventure2.jpg" alt="Intermediate rafting trip">
+                    <h3>Whitewater Challenge – Intermediate</h3>
+                    <p>A thrilling half-day adventure with Class III rapids. Great balance of
+                        excitement and safety.</p>
+                </article>
+                <article>
+                    <img src="images/adventure4.jpg" alt="Advanced rafting trip">
+                    <h3>Epic Rapids Expedition – Advanced</h3>
+                    <p>Full-day adrenaline rush with Class IV–V rapids. For experienced rafters
+                        seeking the ultimate challenge.</p>
+                </article>
+            </div>
         </section>
 
         <!-- Trips Table -->
         <section class="trip-table">
-            <h2>Available Trips</h2>
+            <h2>All Available Trips</h2>
             <table>
                 <thead>
                     <tr>
@@ -60,36 +72,30 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Beginner Rapids</td>
-                        <td>Easy</td>
+                        <td>Gentle Rapids</td>
+                        <td>Beginner</td>
                         <td>2 hours</td>
                         <td>$50</td>
                     </tr>
                     <tr>
-                        <td>Intermediate Adventure</td>
-                        <td>Moderate</td>
+                        <td>Whitewater Challenge</td>
+                        <td>Intermediate</td>
                         <td>4 hours</td>
-                        <td>$90</td>
+                        <td>$120</td>
                     </tr>
                     <tr>
-                        <td>Extreme Challenge</td>
-                        <td>Hard</td>
-                        <td>6 hours</td>
-                        <td>$150</td>
+                        <td>Epic Rapids Expedition</td>
+                        <td>Advanced</td>
+                        <td>8 hours</td>
+                        <td>$250</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-
-        <!-- Call to Action -->
-        <section class="contact-cta">
-            <p>Have questions or ready to book?</p>
-            <a href="contact.html" class="cta-button">Contact Us Today</a>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Rafting Adventures | Designed by Seth</p>
+        <p>&copy; 2026 Rafting Adventures | Designed by Seth Tettey Kofi Anum</p>
     </footer>
 </body>
 
